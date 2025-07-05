@@ -193,6 +193,7 @@ const App = () => {
       
       setNewPlaylistName('');
       setShowCreatePlaylist(false);
+      // Force reload playlists to show the new one
       await loadPlaylists();
     } catch (error) {
       alert('Failed to create playlist');
